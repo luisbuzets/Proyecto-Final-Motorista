@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://kit.fontawesome.com/e37ddc2f97.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Solicitud</title>
+</head>
+<body class="body-inside">
+    <!--Barra de Navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="perfil">
+                <i class="fas fa-user"></i>
+            </div>
+            <div>
+                <a class="navbar-brand" >ORDENES</a>
+            </div>
+            <div class="logo-app">
+                <img class="logo" src="img/iconos/flash.png" alt="">
+            </div>
+        
+        </div>
+    </nav>
+    <div class="container-fluid p-0">
+        <div class="d-flex justify-content-center text-light shadow">
+            <div class="flex-fill text-center bg-dark"  onclick="mostrarSolicitud()">
+                <p class="m-0 p-2"> SOLICITUD</p>
+            </div>
+            <div class="flex-fill text-center bg-dark" onclick="mostrarTomadas()">
+                <p class="m-0 p-2" >TOMADAS</p>
+            </div>
+            <div class="flex-fill text-center bg-dark" onclick="mostrarEntregadas()">
+                <p class="m-0 p-2" >ENTREGAS</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <main>
+        <!--Solicitudes-->
+       <div class="container" ></div>
+      
+        <div id="orden-solicitud">
+             <!--Orden1-->
+            <div class="d-flex mt-5 justify-content-center flex-wrap">
+                <div class="card border-dark shadow-lg me-3" style="width: 23rem;" onclick="mostrarDescripcionOrden()">
+                    <div class="card-header text-light bg-dark">
+                        <div class="d-flex flex-row">
+                            <div class="d-flex me-5"> 
+                                <h3>Orden 001</h3>
+                            </div>
+                            
+                            <div class="d-flex align-items-center ms-5"> 
+                                <img src="img/logo_pizzahut.png" class="card-img rounded-circle" alt="...">
+                                
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card-body">
+                        <div class="d-flex flex-column">
+                            <div class="d-flex align-items-center ">
+                                
+                                <p class="m-0 ms-2 fw-bold">Pizza Peperoni</p>
+                            </div>
+                            <div class="d-flex mt-3">
+                                <!-- Import an image of a pizza -->
+                                <img src="img/8_Producto.jpg" class="rounded-1 producto" alt="Cinque Terre" >
+                                <p class="d-flex flex-wrap ms-2">Pizza Peperoni para  8 personas         Precio :     L.100      Cerca de tu ubicacion</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div> 
+
+
+ <!--orden2-->
+ <div class="d-flex mt-5 justify-content-center flex-wrap">
+    <div class="card border-dark shadow-lg me-3" style="width: 23rem;">
+        <div class="card-header text-light bg-dark">
+            <div class="d-flex flex-row">
+                <div class="d-flex me-5"> 
+                    <h3>Orden 002</h3>
+                </div>
+                
+                <div class="d-flex align-items-center ms-5"> 
+                    <img src="img/logo_pizzahut.png" class="card-img rounded-circle" alt="...">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="card-body">
+            <div class="d-flex flex-column">
+                <div class="d-flex align-items-center ">
+                    
+                    <p class="m-0 ms-2 fw-bold">Pizza Peperoni</p>
+                </div>
+                <div class="d-flex mt-3">
+                    <!-- Import an image of a pizza -->
+                    <img src="img/8_Producto.jpg" class="rounded-1 producto" alt="Cinque Terre" >
+                    <p class="d-flex flex-wrap ms-2">Pizza Peperoni para  8 personas         Precio :     L.100 Cerca de tu ubicacion</p>
+                </div>
+            </div>
+        </div>
+        
+    </div> 
+</div>
+
+
+           </div>
+
+           <div class="container" ></div>
+
+
+          
+
+
+           
+           
+    </div>
+
+    <!--Tomadas-->
+    <div id="orden-Tomadas">
+        <!--Orden1-->
+       <div class="d-flex mt-5 justify-content-center flex-wrap">
+           <div class="card border-dark shadow-lg me-3" style="width: 23rem;">
+               <div class="card-header text-light bg-dark">
+                   <div class="d-flex flex-row">
+                       <div class="d-flex me-5"> 
+                           <h3>Orden 001</h3>
+                       </div>
+                       
+                       <div class="d-flex align-items-center ms-5"> 
+                           <img src="img/logo_pizzahut.png" class="card-img rounded-circle" alt="...">
+                           
+                       </div>
+                   </div>
+               </div>
+
+               <div class="card-body">
+                   <div class="d-flex flex-column">
+                       <div class="d-flex align-items-center ">
+                           
+                           <p class="m-0 ms-2 fw-bold">Pizza Peperoni</p>
+                       </div>
+                       <div class="d-flex mt-3">
+                           <!-- Import an image of a pizza -->
+                           <img src="img/8_Producto.jpg" class="rounded-1 producto" alt="Cinque Terre" >
+                           <p class="d-flex flex-wrap ms-2">Pizza Peperoni para  8 personas         Precio :     L.100      Cerca de tu ubicacion</p>
+                       </div>
+                   </div>
+                   <div class="d-flex justify-content-center card-footer bg-danger">
+                    <p class="fw-bold m-0 text-light" onclick="mostrarEstadoOrden()"> Estado</p>
+                   </div>
+               </div>
+           
+           </div> 
+      </div>
+
+      <div class="container" ></div>
+
+
+      <!--orden2-->
+      <div class="d-flex mt-5 justify-content-center flex-wrap">
+       <div class="card border-dark shadow-lg me-3" style="width: 23rem;">
+           <div class="card-header text-light bg-dark">
+               <div class="d-flex flex-row">
+                   <div class="d-flex me-5"> 
+                       <h3>Orden 002</h3>
+                   </div>
+                   
+                   <div class="d-flex align-items-center ms-5"> 
+                       <img src="img/logo_pizzahut.png" class="card-img rounded-circle" alt="...">
+                       
+                   </div>
+               </div>
+           </div>
+
+           <div class="card-body">
+               <div class="d-flex flex-column">
+                   <div class="d-flex align-items-center ">
+                       
+                       <p class="m-0 ms-2 fw-bold">Pizza Peperoni</p>
+                   </div>
+                   <div class="d-flex mt-3">
+                       <!-- Import an image of a pizza -->
+                       <img src="img/8_Producto.jpg" class="rounded-1 producto" alt="Cinque Terre" >
+                       <p class="d-flex flex-wrap ms-2">Pizza Peperoni para  8 personas         Precio :     L.100 Cerca de tu ubicacion</p>
+                   </div>
+               </div>
+               <div class="d-flex justify-content-center card-footer bg-danger">
+                  <p class="fw-bold m-0 text-light" onclick="mostrarEstadoOrden()"> Estado</p>
+               </div>
+           </div>
+           
+       </div> 
+  </div>
+
+
+      
+      
+</div>
+           
+
+        
+    <!--Entregadas-->
+        <div id="orden-entregadas">
+            <div class="d-flex mt-5 justify-content-center flex-wrap">
+                <div class="card border-dark shadow-lg me-3" style="width: 23rem;">
+                    <div class="card-header text-light bg-dark">
+                        <div class="d-flex flex-row">
+                            <div class="d-flex me-5"> 
+                                <h3>Orden 001</h3>
+                            </div>
+                            
+                            <div class="d-flex align-items-center ms-5"> 
+                                <img src="img/logo_pizzahut.png" class="card-img rounded-circle" alt="...">
+                                
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card-body">
+                        <div class="d-flex flex-column">
+                            <div class="d-flex align-items-center ">
+                                
+                                <p class="m-0 ms-2 fw-bold">Pizza Peperoni</p>
+                            </div>
+                            <div class="d-flex mt-3">
+                                <!-- Import an image of a pizza -->
+                                <img src="img/8_Producto.jpg" class="rounded-1 producto" alt="Cinque Terre" >
+                                <p class="d-flex flex-wrap ms-2">Pizza Peperoni para  8 personas         Precio :     L.100     Entrega Finalizada </p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div> 
+           </div>
+
+        </div>  
+
+
+        <!--Mostrar Orden-->
+
+        <div id="descripcion-orden">
+            <div  >
+                <div class=" row"  >
+                    <h1 class="h1-orden"> Orden 001</h1>
+                    <div class="d-flex mt-3 justify-content-center flex-wrap">
+                <div class="card border-dark shadow-lg" style="width: 21rem;">
+                    <div class="card-header text-light bg-ligth">
+                        <div class="d-flex flex-row">
+                            <div class="d-flex align-items-center ms-5"> 
+                                <img src="img/logo_pizzahut.png" class="card-img rounded-circle" alt="...">
+                                
+                            </div>
+                            <div class="d-flex me-5"> 
+                                <h3 class="h3-orden">Pizza Hut</h3>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+    
+                    <div class="card-body">
+                        <div class="d-flex flex-column">
+                            <div class="d-flex align-items-center ">
+                                
+                                <p class="m-0 ms-2 fw-bold">Pizza Peperoni</p>
+                            </div>
+                            <div class="d-flex mt-3">
+                                <!-- Import an image of a pizza -->
+                                <img src="img/8_Producto.jpg" class="rounded-1 producto" alt="Cinque Terre" >
+                                <p class="d-flex flex-wrap ms-2">Pizza Peperoni para  8 personas         Precio :     L.100     Entrega Finalizada </p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nulla iste perferendis magni accusantium fugiat earum impedit consequuntur incidunt! Accusamus sed ab ullam, porro blanditiis nostrum nulla autem qui praesentium?</p>
+                        </div>
+                        
+                         <img src="img/9_Mapa.png" class="rounded-1 producto" alt="Cinque Terre" >
+                         <div class="d-flex justify-content-center card-footer bg-danger">
+                            <p class="fw-bold m-0 text-light"> Tomar Orden</p>
+                         </div>
+
+
+                    </div>
+                   
+                </div> 
+           </div>
+
+                </div>
+            
+            
+        </div>
+
+        </div>
+
+
+        <!--Mostrar Estado Orden-->
+        <div class="container" id="estado-entrega">
+
+            <div class="row">
+                <div class="col-12">
+                       <!--barra superior-->
+                     <nav class="navbar navbar-light bg-light">
+                         <div class="container-fluid">
+                            <button type="submit" class="btn" onclick="mostrarTomadas()">></button>
+                             <a class="navbar-brand" href="#">Estado Orden</a>
+                          </div>
+                     </nav>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                     <!--Botones-->
+                   <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card estado-orden">
+                                   <div class="card-body">
+                                    1 Tomada
+                                    <img src="img/10_Checklist.png" class="img-estado">
+                                   </div>
+                                </div>
+                     
+                            </div>
+                       </div>
+
+            <div class="row">
+             <div class="col-12">
+                 <div class="card estado-orden">
+                     <div class="card-body">
+                       2 En Camino
+                       <img src="img/11_Motocicleta.png" class="img-estado">
+                     </div>
+                   </div>
+                 
+             </div>
+            </div>
+
+            <div class="row">
+             <div class="col-12">
+                 <div class="card estado-orden">
+                     <div class="card-body">
+                       3 Tienda
+                       <img src="img/12_Tienda.png" class="img-estado">
+                     </div>
+                   </div>
+                 
+             </div>
+        </div>
+
+        <div class="row">
+         <div class="col-12">
+             <div class="card estado-orden" onclick="mostrarFactura()">
+                 <div class="card-body">
+                   4 Destino
+                   <img src="img/13_Destino.png" class="img-estado">
+                 </div>
+               </div>
+             
+         </div>
+    </div>
+        </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!--Factura-->
+
+        <div id="Factura">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-light bg-light">
+                            <div class="container-fluid">
+                               <button type="submit" class="btn" onclick="mostrarTomadas()">></button>
+                                <a class="navbar-brand" href="#">Entrega</a>
+                             </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="container">
+                            <div class="row">
+                               <div class="col">
+                                   Factura
+                               </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                        </div>
+                                      </div>
+                                </div>
+                             </div>
+
+                             
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                        </div>
+                                      </div>
+                                </div>
+                             </div>
+
+                             
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                        </div>
+                                      </div>
+                                </div>
+                             </div>
+                             
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <a href="#" class="btn btn-danger control" onclick="mostrarTomadas()">Finalizar Orden</a> 
+                                        </div>
+                                      </div>
+                                </div>
+                             </div>
+
+                        </div>
+
+                    </div>
+
+                </div><!--Fin row abajo-->
+
+            </div><!--fin container principal-->
+
+        </div><!--Fin factura-->
+
+    </main>
+
+    <script src= "js/axios.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+   <script src="js/controlador.js"></script>
+</body>
+</html>
